@@ -1,0 +1,10 @@
+.archive {
+	transform: skewY(10deg);
+	border-top: 10px solid #E2454D;
+
+	&__inner {
+
+		transform: skewY(-10deg);
+
+	}
+}

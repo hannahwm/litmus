@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gulp Template</title>
+    <!--build:css css/styles.min.css-->
+      <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+
+  <body>
+    <div class="litmus">
+      @@include('modules/featured.html')
+      <div class="collapsible">
+        <div class="collapsible__control">
+          <input id="collapsible__input" class="collapsible__input" type="checkbox">
+          <label for="collapsible__input" class="collapsible__label" tabindex="0">Behind the episode</label>
+        </div>
+        @@include('modules/behind-the-episode.html')
+      </div>
+      @@include('modules/archive.html')
+    </div>
+
+    <!--build:js js/main.min.js -->
+    <script src="js/expandSection.js"></script>
+    <script src="js/basics.js"></script>
+    <!--endbuild-->
+
+  </body>
+</html>
